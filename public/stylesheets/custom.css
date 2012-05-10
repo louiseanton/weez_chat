@@ -1,13 +1,38 @@
 .container {
-  width: 710px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 body {
-  background: #cff;
+  background: #000066;
 }
 
 header {
-  padding-top: 20px;
+  height: 75px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+div.header_left{
+  position: relative;
+  float: left;
+}
+
+div.logo{
+  height: 50px;
+  width: 50px;
+  border: 0px; 
+}
+
+div.title{
+  position: relative;
+  float: right;
+  color: blue;
+}
+
+div.navigation{
+  padding-top: 20px
 }
 
 header img {
@@ -87,7 +112,7 @@ a.signup_button {
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #000066;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -102,7 +127,7 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

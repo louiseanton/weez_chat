@@ -34,7 +34,7 @@ describe UsersController do
       response.should have_selector("h1>img", :class => "gravatar")
     end
   end
-
+  
   describe "GET 'new'" do
 
     it "should be successful" do
@@ -47,6 +47,7 @@ describe UsersController do
       response.should have_selector("title", :content => "Sign up")
     end
   end
+
 describe "POST 'create'" do
 
     describe "failure" do
@@ -72,8 +73,8 @@ describe "POST 'create'" do
         response.should render_template('new')
       end
     end
-    
-    
+end
+
   describe "success" do
 
       before(:each) do
@@ -90,13 +91,14 @@ describe "POST 'create'" do
       it "should redirect to the user show page" do
         post :create, :user => @attr
         response.should redirect_to(user_path(assigns(:user)))
-      end
-      
-      it "should have a welcome message" do
+      end    
+  end
+  
+  it "should have a welcome message" do
         post :create, :user => @attr
-        flash[:success].should =~ /welcome to weezchat/i
+        flash[:success].should =~ /welcome to the sample app/i
       end
-
     end
   end
 end
+

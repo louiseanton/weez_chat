@@ -16,7 +16,7 @@ WeezChat::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   #get "pages/home"
-  match '/home', :to => 'pages#home'
+  #match '/home', :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
